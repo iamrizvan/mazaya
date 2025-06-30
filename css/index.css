@@ -274,22 +274,6 @@ h1::after {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
-.what-makes-us-different h2 {
-    font-size: 2.5rem;
-    color: #1e3a8a;
-    margin-bottom: 40px;
-    position: relative;
-}
-
-.what-makes-us-different h2::after {
-    content: '';
-    display: block;
-    width: 80px;
-    height: 4px;
-    background-color: #0ea5e9;
-    margin: 12px auto 0;
-    border-radius: 4px;
-}
 
 /* Features Grid */
 .features {
