@@ -6,14 +6,14 @@
   <title>HibibiBite | Smart Refreshments</title>
   <style>
     body { font-family: Arial, sans-serif; margin: 0; padding: 0; background: #f9f9f9; }
-    header { background: #ff5722; color: white; padding: 2rem 1rem; text-align: center; }
-    header h1 { margin: 0; font-size: 2.5rem; }
+    header { background: #5a015f; color: white; padding: 2rem 1rem; text-align: center; }
+    header h1 { margin: 5rem; font-size: 2.5rem; }
     header p { font-size: 1.2rem; margin: 0.5rem 0; }
     nav { background: #fff; padding: 1rem; text-align: center; box-shadow: 0 2px 4px rgba(0,0,0,0.1); }
-    nav a { margin: 0 1rem; color: #ff5722; text-decoration: none; font-weight: bold; }
+    nav a { margin: 0 1rem; color: #5a015f; text-decoration: none; font-weight: bold; }
     nav a:hover { text-decoration: underline; }
     .buttons a { 
-      margin: 1rem 0.5rem; padding: 0.75rem 1.5rem; background: white; color: #ff5722;
+      margin: 2rem 2rem; padding: 0.75rem 1.5rem; background: white; color: #5a015f;
       text-decoration: none; border-radius: 5px; font-weight: bold;
       transition: background 0.3s;
     }
@@ -26,10 +26,58 @@
     .highlight { flex: 1 1 200px; background: #fff; padding: 1rem; border: 1px solid #eee; border-radius: 6px; }
     footer { background: #333; color: white; padding: 1rem; text-align: center; }
     footer a { color: #ff9800; text-decoration: none; }
+
+    @import url('https://fonts.googleapis.com/css2?family=Raleway:wght@500;700&display=swap');
+
+.welcome-hero {
+  background-image: url('images/vending_machineback.jpg');
+  background-size: cover;
+  background-position: center;
+  padding: 5rem 1rem;
+  text-align: center;
+  color: #fff;
+  position: relative;
+  margin: 2rem 0;
+}
+
+.welcome-hero::before {
+  content: "";
+  position: absolute;
+  top: 0; left: 0; right: 0; bottom: 0;
+  background: rgba(0, 0, 0, 0.6); /* dark overlay for readability */
+  z-index: 1;
+  border-radius: 10px;
+}
+
+.welcome-content {
+  position: relative;
+  z-index: 2;
+  max-width: 900px;
+  margin: auto;
+  padding: 2rem;
+  font-family: 'Raleway', sans-serif;
+}
+
+.welcome-content h2 {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+  color: #ffb580;
+  text-shadow: 1px 1px 4px rgba(0,0,0,0.3);
+}
+
+.welcome-content p {
+  font-size: 1.3rem;
+  line-height: 1.8;
+  text-shadow: 1px 1px 3px rgba(0,0,0,0.3);
+}
+
   </style>
 </head>
 <body>
   <nav>
+    <a href="index.html">
+      <img src="images/logo.jpeg" alt="HibibiBite Logo" style="height: 40px; vertical-align: middle;">
+    </a>
     <a href="index.html">Home</a>
     <a href="about.html">About Us</a>
     <a href="products.html">Products</a>
@@ -39,15 +87,17 @@
   <header>
     <h1>Smart Refreshments, Right Where You Are!</h1>
     <p>Experience the future of snacking and hydration with HibibiBite — your 24/7 vending solution across Sharjah.</p>
-    <div class="buttons">
+    <!-- <div class="buttons">
       <a href="#contact">Request a Machine</a>
       <a href="#products">See Our Products</a>
-    </div>
+    </div> -->
   </header>
 
-  <section class="section">
-    <h2>Welcome to HibibiBite!</h2>
-    <p>We provide sleek, fully automated vending machines packed with your favorite snacks, drinks, and healthy options. Whether you're at the beach, mall, office, or residential building — we’re always just a step away.</p>
+  <section class="welcome-hero">
+    <div class="welcome-content">
+      <h2>Welcome to HibibiBite!</h2>
+      <p>We provide sleek, fully automated vending machines packed with your favorite snacks, drinks, and healthy options. Whether you're at the beach, mall, office, or residential building — we’re always just a step away.</p>
+    </div>
   </section>
 
   <section class="section">
