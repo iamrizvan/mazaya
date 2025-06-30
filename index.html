@@ -4,137 +4,106 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>HibibiBite | Smart Refreshments</title>
-  <style>
-    body { font-family: Arial, sans-serif; margin: 0; padding: 0; background: #f9f9f9; }
-    header { background: #5a015f; color: white; padding: 2rem 1rem; text-align: center; }
-    header h1 { margin: 5rem; font-size: 2.5rem; }
-    header p { font-size: 1.2rem; margin: 0.5rem 0; }
-    nav { background: #fff; padding: 1rem; text-align: center; box-shadow: 0 2px 4px rgba(0,0,0,0.1); }
-    nav a { margin: 0 1rem; color: #5a015f; text-decoration: none; font-weight: bold; }
-    nav a:hover { text-decoration: underline; }
-    .buttons a { 
-      margin: 2rem 2rem; padding: 0.75rem 1.5rem; background: white; color: #5a015f;
-      text-decoration: none; border-radius: 5px; font-weight: bold;
-      transition: background 0.3s;
-    }
-    .buttons a:hover { background: #fff3e0; }
-    .section { padding: 2rem 1rem; max-width: 1000px; margin: auto; }
-    .section h2 { color: #333; margin-bottom: 1rem; }
-    .features { display: flex; flex-wrap: wrap; gap: 1rem; }
-    .feature { flex: 1 1 200px; background: white; padding: 1rem; border-radius: 8px; box-shadow: 0 0 5px rgba(0,0,0,0.1); }
-    .quick-highlights { display: flex; flex-wrap: wrap; gap: 1rem; text-align: center; }
-    .highlight { flex: 1 1 200px; background: #fff; padding: 1rem; border: 1px solid #eee; border-radius: 6px; }
-    footer { background: #333; color: white; padding: 1rem; text-align: center; }
-    footer a { color: #ff9800; text-decoration: none; }
-
-    @import url('https://fonts.googleapis.com/css2?family=Raleway:wght@500;700&display=swap');
-
-.welcome-hero {
-  background-image: url('images/vending_machineback.jpg');
-  background-size: cover;
-  background-position: center;
-  padding: 5rem 1rem;
-  text-align: center;
-  color: #fff;
-  position: relative;
-  margin: 2rem 0;
-}
-
-.welcome-hero::before {
-  content: "";
-  position: absolute;
-  top: 0; left: 0; right: 0; bottom: 0;
-  background: rgba(0, 0, 0, 0.6); /* dark overlay for readability */
-  z-index: 1;
-  border-radius: 10px;
-}
-
-.welcome-content {
-  position: relative;
-  z-index: 2;
-  max-width: 900px;
-  margin: auto;
-  padding: 2rem;
-  font-family: 'Raleway', sans-serif;
-}
-
-.welcome-content h2 {
-  font-size: 3rem;
-  margin-bottom: 1rem;
-  color: #ffb580;
-  text-shadow: 1px 1px 4px rgba(0,0,0,0.3);
-}
-
-.welcome-content p {
-  font-size: 1.3rem;
-  line-height: 1.8;
-  text-shadow: 1px 1px 3px rgba(0,0,0,0.3);
-}
-
-  </style>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <link rel="stylesheet" href="css/index.css">
 </head>
 <body>
   <nav>
     <a href="index.html">
-      <img src="images/logo.jpeg" alt="HibibiBite Logo" style="height: 40px; vertical-align: middle;">
+      <img src="images/logo.jpeg" alt="HibibiBite Logo">
     </a>
-    <a href="index.html">Home</a>
-    <a href="about.html">About Us</a>
-    <a href="products.html">Products</a>
-    <a href="contact.html">Contact</a>
+    <div style="display: flex; gap: 20px;">
+      <a href="index.html">Home</a>
+      <a href="about.html">About Us</a>
+      <a href="products.html">Products</a>
+      <a href="contact.html">Contact</a>
+    </div>
   </nav>
-
-  <header>
-    <h1>Smart Refreshments, Right Where You Are!</h1>
-    <p>Experience the future of snacking and hydration with HibibiBite — your 24/7 vending solution across Sharjah.</p>
-    <!-- <div class="buttons">
-      <a href="#contact">Request a Machine</a>
-      <a href="#products">See Our Products</a>
-    </div> -->
-  </header>
-
   <section class="welcome-hero">
     <div class="welcome-content">
-      <h2>Welcome to HibibiBite!</h2>
-      <p>We provide sleek, fully automated vending machines packed with your favorite snacks, drinks, and healthy options. Whether you're at the beach, mall, office, or residential building — we’re always just a step away.</p>
-    </div>
+      <h1>Welcome to Mazaya!</h1>
+      <p>Mazaya offers sleek, fully automated vending machines stocked with snacks, drinks, and healthy options—perfect for beaches, malls, offices, and residential buildings. Discover a smarter way to snack and stay refreshed, 24/7 across Sharjah.</p>
+      </div>
   </section>
 
-  <section class="section">
-    <h2>What Makes Us Different?</h2>
+  <section class="what-makes-us-different">
+    <h1>What Makes Us Different?</h1>
     <div class="features">
       <div class="feature">
+        <strong>✔️ Licensed & Trusted</strong>
+        <p>We are a fully licensed vending company, ensuring professional and compliant service.</p>
+      </div>
+      <div class="feature">
         <strong>✔️ Hassle-Free Operation</strong>
-        <p>We handle everything — installation, refilling, and maintenance.</p>
+        <p>We take care of everything — installation, refilling, and maintenance — so you don’t have to.</p>
       </div>
       <div class="feature">
         <strong>✔️ Multiple Payment Options</strong>
-        <p>Our machines support cash, card, and mobile wallets.</p>
+        <p>Our machines accept cash, cards, and mobile wallets for ultimate convenience.</p>
       </div>
       <div class="feature">
         <strong>✔️ Healthy & Tasty Options</strong>
-        <p>From energizing drinks to guilt-free snacks — we cater to all tastes.</p>
+        <p>From energy drinks to guilt-free snacks, we provide a range to satisfy every craving.</p>
       </div>
       <div class="feature">
         <strong>✔️ Reliable Support</strong>
-        <p>Our team is just a message away, ready to assist.</p>
+        <p>Have an issue? Our friendly team is always just a message away.</p>
+      </div>
+      <div class="feature">
+        <strong>✔️ Passionate Team</strong>
+        <p>Driven by enthusiasm, our team is committed to delivering the best vending experience possible.</p>
       </div>
     </div>
   </section>
 
-  <section class="section">
-    <h2>Our Highlights</h2>
+  <section class="highlight-section">
+    <h1>Our Highlights</h1>
     <div class="quick-highlights">
-      <div class="highlight">🛠️ Easy Installation</div>
-      <div class="highlight">🥤 Wide Product Range</div>
-      <div class="highlight">💳 Contactless Payment</div>
-      <div class="highlight">📍 Sharjah-Wide Coverage</div>
+      <div class="highlight">
+        <span>🛠️</span>
+        Easy Installation
+      </div>
+      <div class="highlight">
+        <span>🥤</span>
+        Wide Product Range
+      </div>
+      <div class="highlight">
+        <span>💳</span>
+        Contactless Payment
+      </div>
+      <div class="highlight">
+        <span>📍</span>
+        Coverage Across Sharjah
+      </div>
     </div>
   </section>
 
-  <footer>
-    <p>Want a vending machine at your location? <a href="#contact">Request One Now</a><br/>
-    Curious about what we offer? <a href="#products">Explore Products</a></p>
+  <footer class="site-footer">
+    <div class="footer-content">
+      <p>
+        Want a vending machine at your location? 
+        <a href="#contact">Request One Now</a><br>
+        Curious about what we offer? 
+        <a href="#products">Explore Products</a>
+      </p>
+  
+      <div class="social-icons">
+        <a href="https://www.instagram.com" target="_blank" aria-label="Instagram">
+          <i class="fab fa-instagram"></i>
+        </a>
+        <a href="https://www.facebook.com" target="_blank" aria-label="Facebook">
+          <i class="fab fa-facebook-f"></i>
+        </a>
+        <a href="https://www.twitter.com" target="_blank" aria-label="Twitter">
+          <i class="fab fa-twitter"></i>
+        </a>
+      </div>
+  
+      <p class="copyright">
+        &copy; 2025 HibibiBite. All rights reserved.
+      </p>
+    </div>
   </footer>
+  
 </body>
 </html>
