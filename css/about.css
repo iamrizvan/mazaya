@@ -1,17 +1,19 @@
 
- /* Reset & Basic */
- *, *::before, *::after {
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@500;700&display=swap');
+
+/* Reset some base styles */
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-  }
-  body {
-    font-family: Arial, sans-serif;
-    line-height: 1.6;
-    color: #333;
-    background: #f9f9f9;
-  }
+}
 
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+    background: #f9f9f9;
+}
 
 header {
     background-color: #5a015f;
@@ -29,51 +31,51 @@ header h1 {
 
 /* Navigation Bar Styling */
 nav {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 16px 40px;
-    background: linear-gradient(to right, #0ea5e9, #0f766e);
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
-    position: sticky;
-    top: 0;
-    z-index: 1000;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 16px 40px;
+  background: linear-gradient(to right, #0ea5e9, #0f766e);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+  position: sticky;
+  top: 0;
+  z-index: 1000;
 }
 
 nav a {
-    color: #ffffff;
-    text-decoration: none;
-    margin-left: 30px;
-    font-size: 1rem;
-    font-weight: 500;
-    transition: color 0.3s ease, border-bottom 0.3s ease;
+  color: #ffffff;
+  text-decoration: none;
+  margin-left: 30px;
+  font-size: 1rem;
+  font-weight: 500;
+  transition: color 0.3s ease, border-bottom 0.3s ease;
 }
 
 nav a:first-of-type {
-    margin-left: 0;
+  margin-left: 0;
 }
 
 nav a:hover {
-    color: #ffe082;
-    border-bottom: 2px solid #ffe082;
+  color: #ffe082;
+  border-bottom: 2px solid #ffe082;
 }
 
 nav img {
-    height: 40px;
-    border-radius: 6px;
+  height: 40px;
+  border-radius: 6px;
 }
 
 /* Responsive Layout */
 @media (max-width: 768px) {
-    nav {
-        flex-direction: column;
-        align-items: flex-start;
-        padding: 16px 20px;
-    }
+  nav {
+      flex-direction: column;
+      align-items: flex-start;
+      padding: 16px 20px;
+  }
 
-    nav a {
-        margin: 10px 0;
-    }
+  nav a {
+      margin: 10px 0;
+  }
 }
 
   /* Section Layout */
@@ -190,12 +192,6 @@ nav img {
       font-size: 1.2rem;
     }
   }
-
-  /* Responsive typography */
-  :root {
-    font-size: clamp(16px, 2vw, 20px);
-  }
-
 
   
 /* Footer styles */

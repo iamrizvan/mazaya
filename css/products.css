@@ -60,16 +60,40 @@ body {
     }
   }
   
-
 .section {
-    max-width: 1100px;
-    margin: auto;
-    padding: 2rem 1rem;
+  padding: 60px 20px;
+  background: linear-gradient(135deg, #f1fdfb, #ffffff);
+  text-align: center;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.section h2 {
+  font-size: 3rem;
+  font-weight: 700;
+  color: #0f172a;
+  margin-bottom: 50px;
+  background: linear-gradient(to right, #0ea5e9, #10b981);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  position: relative;
 }
 
-.section h2 {
-    color: #333;
-    margin-bottom: 1rem;
+.section h2::after {
+  content: '';
+  width: 70px;
+  height: 4px;
+  background: #ffbc04;
+  display: block;
+  margin: 16px auto 0;
+  border-radius: 3px;
+}
+.section img {
+  display: block;
+  width: 100%;
+  max-height: 300px;
+  object-fit: cover;
+  margin-bottom: 1.5rem;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
 }
 
 .product-category {
@@ -171,6 +195,27 @@ nav img {
     font-size: 2rem;
     color: #ff5722;
     margin-bottom: 2rem;
+  }
+
+  .brands-section h2 {
+    font-size: 3rem;
+    font-weight: 700;
+    color: #0f172a;
+    margin-bottom: 50px;
+    background: linear-gradient(to right, #0ea5e9, #10b981);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    position: relative;
+  }
+  
+  .brands-section h2::after {
+    content: '';
+    width: 70px;
+    height: 4px;
+    background: #ffbc04;
+    display: block;
+    margin: 16px auto 0;
+    border-radius: 3px;
   }
   
   .brands-slider {
