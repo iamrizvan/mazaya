@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
@@ -7,6 +8,7 @@
   <link rel="stylesheet" href="css/contact.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 </head>
+
 <body>
   <nav>
     <a href="index.html">
@@ -19,26 +21,41 @@
       <a href="contact.html">Contact</a>
     </div>
   </nav>
+
   <header class="contact-header">
     <h1>Contact Us</h1>
-    <p>We’d love to hear from you — drop us a message or give us a call!</p>
+    <p>We’d love to hear from you—whether you have questions, feedback, or just want to say hello. Fill out the form
+      below or give us a call, and we'll get back to you as soon as possible.</p>
   </header>
 
   <main>
-    <img class="contact-image" src="https://images.unsplash.com/photo-1504384308090-c894fdcc538d?auto=format&fit=crop&w=1350&q=80" alt="Contact us" />
+    <img class="contact-image" src="images/contact.jpg" alt="Contact us" />
     <h2>Get in Touch with Mazaya</h2>
-    <form action="#" method="post" onsubmit="alert('Thank you for contacting Mazaya! We will get back to you shortly.'); return false;">
-      <label for="name">Full Name</label>
-      <input type="text" id="name" name="name" required placeholder="Your full name" />
+    <form action="#" method="post"
+      onsubmit="alert('Thank you for contacting Mazaya! We will get back to you shortly.'); return false;">
+      <div class="form-group">
+        <i class="icon fa fa-user"></i>
+        <input type="text" id="name" name="name" required placeholder=" " />
+        <label for="name">Full Name</label>
+      </div>
 
-      <label for="email">Email Address</label>
-      <input type="email" id="email" name="email" required placeholder="your.email@example.com" />
+      <div class="form-group">
+        <i class="icon fa fa-envelope"></i>
+        <input type="email" id="email" name="email" required placeholder=" " />
+        <label for="email">Email Address</label>
+      </div>
 
-      <label for="phone">Phone Number</label>
-      <input type="tel" id="phone" name="phone" placeholder="+971 50 123 4567" />
+      <div class="form-group">
+        <i class="icon fa fa-phone"></i>
+        <input type="tel" id="phone" name="phone" placeholder=" " />
+        <label for="phone">Phone Number</label>
+      </div>
 
-      <label for="message">Message</label>
-      <textarea id="message" name="message" required placeholder="Write your message here..."></textarea>
+      <div class="form-group">
+        <i class="icon fa fa-comment"></i>
+        <textarea id="message" name="message" required placeholder=" "></textarea>
+        <label for="message">Message</label>
+      </div>
 
       <button type="submit">Send Message</button>
     </form>
@@ -60,7 +77,7 @@
           <a href="products.html">Explore Products</a>
         </p>
       </div>
-  
+
       <div class="footer-social">
         <a href="https://www.instagram.com" target="_blank" aria-label="Instagram">
           <i class="fab fa-instagram"></i>
@@ -75,19 +92,20 @@
           <i class="fab fa-tiktok"></i>
         </a>
       </div>
-  
+
       <div class="footer-bottom">
         <p>&copy; 2025 Mazaya Vending. All rights reserved.</p>
       </div>
-  
+
       <button class="back-to-top" aria-label="Back to top">↑</button>
     </div>
   </footer>
 
-    <!-- Optional JS for Back-to-Top -->
-    <script>
-      document.querySelector('.back-to-top')
-        .addEventListener('click', () => window.scrollTo({ top: 0, behavior: 'smooth' }));
-    </script>
+  <!-- Optional JS for Back-to-Top -->
+  <script>
+    document.querySelector('.back-to-top')
+      .addEventListener('click', () => window.scrollTo({ top: 0, behavior: 'smooth' }));
+  </script>
 </body>
+
 </html>
