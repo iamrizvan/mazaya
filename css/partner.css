@@ -61,7 +61,7 @@ nav img {
     }
 }
 .welcome-hero {
-    background-image: url('../images/vending_machineback.jpg');
+    background-image: url('../images/partner.jpg');
     background-size: cover;
     background-position: center;
     padding: 5rem 1rem;
@@ -94,28 +94,109 @@ nav img {
 }
   
 
+h1 {
+  font-size: 3rem;
+  font-weight: 700;
+  text-align: center;
+  color: #0f172a;
+  margin-bottom: 50px;
+  background: linear-gradient(to right, #0ea5e9, #10b981);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  position: relative;
+}
+
+h1::after {
+  content: '';
+  width: 70px;
+  height: 4px;
+  background: #ffbc04;
+  display: block;
+  margin: 16px auto 0;
+  border-radius: 3px;
+}
   
-  .models-section {
-    display: flex;
-    gap: 2rem;
-    padding: 2rem;
-    flex-wrap: wrap;
-    justify-content: center;
-    background: #fff;
+.models-section {
+  padding: 60px 20px;
+  background: linear-gradient(to right, #f9fafb, #f0fdf4);
+}
+
+.models-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  justify-content: center;
+}
+
+.model-card {
+  flex: 1 1 45%;
+  background: #fff;
+  border-radius: 16px;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.06);
+  padding: 2rem;
+  transition: transform 0.3s ease;
+  max-width: 600px;
+}
+
+.model-card:hover {
+  transform: translateY(-4px);
+}
+
+.model-content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 2rem;
+  flex-wrap: wrap;
+}
+
+.model-text {
+  flex: 1;
+  min-width: 220px;
+}
+
+.model-text h2 {
+  font-size: 1.5rem;
+  color: #0f172a;
+  margin-bottom: 0.5rem;
+}
+
+.model-text p {
+  font-size: 1rem;
+  color: #4b5563;
+  line-height: 1.6;
+}
+
+.model-icon {
+  flex-shrink: 0;
+  width: 260px;
+  height: auto;
+  border-radius: 10px;
+  object-fit: cover;
+}
+
+@media (max-width: 900px) {
+  .models-row {
+    flex-direction: column;
+    align-items: center;
   }
-  
+
   .model-card {
-    flex: 1 1 300px;
-    background: #f1f5f9;
-    border-radius: 12px;
-    padding: 2rem;
-    box-shadow: 0 4px 12px rgba(0,0,0,0.05);
-    transition: transform 0.3s ease;
+    flex: 1 1 100%;
+    max-width: 100%;
   }
-  
-  .model-card:hover {
-    transform: translateY(-5px);
+
+  .model-content {
+    flex-direction: column;
+    text-align: center;
   }
+
+  .model-icon {
+    width: 100%;
+    max-width: 300px;
+  }
+}
+
   
   .workflow-section {
     background: #e0f7fa;
@@ -149,173 +230,201 @@ nav img {
   }
   
   .machine-types {
-    padding: 3rem 1rem;
-    text-align: center;
-    background: #fff;
-  }
-  
-  .machine-types {
-    padding: 80px 20px;
-    background: linear-gradient(135deg, #f0fdf4, #ecfeff);
+    padding: 60px 20px;
     text-align: center;
   }
   
-  .machine-types h2 {
+  .machine-types h1 {
     font-size: 2.5rem;
-    background: linear-gradient(to right, #0ea5e9, #10b981);
+    margin-bottom: 40px;
+    background: linear-gradient(to right, #0ea5e9, #22c55e);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
-    margin-bottom: 40px;
-    position: relative;
   }
   
   .machine-carousel {
     display: flex;
-    gap: 2rem;
-    overflow-x: auto;
-    scroll-snap-type: x mandatory;
-    padding-bottom: 1rem;
-    scroll-behavior: smooth;
-  }
-  
-  .machine-carousel::-webkit-scrollbar {
-    height: 8px;
-  }
-  .machine-carousel::-webkit-scrollbar-thumb {
-    background-color: #ccc;
-    border-radius: 4px;
+    flex-wrap: wrap;
+    justify-content: center; /* Center-aligns cards horizontally */
+    gap: 30px;
   }
   
   .machines-card {
-    flex: 0 0 auto;
-    scroll-snap-align: start;
     background: #fff;
-    border-radius: 16px;
-    box-shadow: 0 10px 24px rgba(0, 0, 0, 0.08);
-    padding: 12px;
+    border-radius: 12px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+    padding: 20px;
+    max-width: 250px;
     transition: transform 0.3s ease;
-    min-width: 220px;
-    max-width: 240px;
   }
   
   .machines-card img {
     width: 100%;
     height: auto;
-    border-radius: 12px;
+    border-radius: 10px;
   }
   
   .machines-card:hover {
-    transform: translateY(-8px) scale(1.05);
-  }
-  
-  @keyframes scrollMachines {
-    0% { transform: translateX(0); }
-    100% { transform: translateX(-100%); }
-  }
-  
-  .machine-details {
-    max-width: 900px;
-    margin: 2rem auto;
-    padding: 1rem 2rem;
-    text-align: center;
-  }
-  
-  .machine-details h2 {
-    font-size: 2.5rem;
-    color: #0f172a;
-    margin-bottom: 2rem;
-    background: linear-gradient(to right, #0ea5e9, #22c55e);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    position: relative;
-  }
-  
-  .machine-cards {
-    display: flex;
-    gap: 2rem;
-    justify-content: center;
-    flex-wrap: wrap;
-  }
-  
-  .machine-card {
-    background: rgba(255, 255, 255, 0.85);
-    border-radius: 16px;
-    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.12);
-    padding: 2rem 1.5rem;
-    flex: 1 1 250px;
-    max-width: 280px;
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-  }
-  
-  .machine-card:hover {
-    transform: translateY(-10px) scale(1.05);
-    box-shadow: 0 16px 40px rgba(0, 0, 0, 0.15);
-  }
-  
-  .machine-card h3 {
-    font-size: 1.5rem;
-    color: #10b981;
-    margin-bottom: 1rem;
-  }
-  
-  .machine-card p {
-    font-size: 1.15rem;
-    color: #334155;
-    line-height: 1.5;
-  }
-  
-  
-  
-  .payment-options {
-    padding: 3rem 1rem;
-    background: linear-gradient(135deg, #e0f2fe, #f1f5f9);
-    text-align: center;
-  }
-  
-  .payment-cards {
-    display: flex;
-    gap: 1.5rem;
-    justify-content: center;
-    flex-wrap: wrap;
-    margin-top: 2rem;
-  }
-  
-  .payment-cards .card {
-    background: white;
-    padding: 1.5rem;
-    width: 140px;
-    border-radius: 12px;
-    box-shadow: 0 6px 14px rgba(0,0,0,0.1);
-    transition: transform 0.3s ease;
-    text-align: center;
-  }
-  
-  .payment-cards .card:hover {
-    transform: translateY(-6px);
-  }
-  
-  .payment-cards .card i {
-    font-size: 2rem;
-    color: #0ea5e9;
-    animation: bounce 2s infinite;
-  }
-  
-  .payment-cards .card p {
-    margin-top: 0.5rem;
-    font-weight: 500;
-  }
-  
-  @keyframes bounce {
-    0%, 100% { transform: translateY(0); }
-    50% { transform: translateY(-6px); }
+    transform: translateY(-5px);
   }
   
   /* Responsive */
   @media (max-width: 768px) {
-    .model-card, .payment-cards .card {
+    .machine-carousel {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .machines-card {
+      max-width: 90%;
+    }
+  }
+  
+  .machine-details {
+    padding: 60px 20px;
+    text-align: center;
+  }
+  
+  .machine-details h1 {
+    font-size: 2.5rem;
+    margin-bottom: 40px;
+    background: linear-gradient(to right, #0ea5e9, #10b981);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+  
+  .machine-cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+    max-width: 1000px;
+    margin: 0 auto;
+  }
+  
+  .machine-card {
+    background-color: #ffffff;
+    border-radius: 12px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+    padding: 40px 20px 30px;
+    width: 280px;
+    text-align: center;
+    position: relative;
+    transition: transform 0.3s ease;
+  }
+  
+  .machine-card:hover {
+    transform: translateY(-6px);
+  }
+  
+  .icon-circle {
+    width: 70px;
+    height: 70px;
+    background: linear-gradient(135deg, #0ea5e9, #22c55e);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: -60px auto 20px;
+    font-size: 1.8rem;
+    color: white;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  }
+  
+  .card-content h3 {
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+    color: #0f172a;
+  }
+  
+  .card-content p {
+    color: #475569;
+    font-size: 0.95rem;
+  }
+  
+  /* Responsive */
+  @media (max-width: 768px) {
+    .machine-cards {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .machine-card {
       width: 90%;
     }
   }
+  
+  
+  .payment-options {
+    padding: 60px 20px;
+    text-align: center;
+    background: #f8fafc;
+  }
+  
+  .payment-options h1 {
+    font-size: 2.5rem;
+    margin-bottom: 40px;
+    color: #0f172a;
+    background: linear-gradient(to right, #0ea5e9, #22c55e);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+  
+  .payment-cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+  }
+  
+  .payment-card {
+    background: white;
+    border-radius: 16px;
+    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.05);
+    padding: 20px 16px;
+    width: 160px;
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .payment-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 24px rgba(0, 0, 0, 0.1);
+  }
+  
+  .payment-icon {
+    width: 70px;
+    height: 70px;
+    background: linear-gradient(135deg, #0ea5e9, #22c55e);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: -60px auto 20px;
+    font-size: 1.8rem;
+    color: white;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  }
+  
+  .payment-card p {
+    margin: 0;
+    font-weight: 600;
+    color: #1e293b;
+    font-size: 1rem;
+  }
+  
+  /* Responsive */
+  @media (max-width: 600px) {
+    .payment-card {
+      width: 100%;
+      max-width: 280px;
+    }
+  
+    .payment-options h1 {
+      font-size: 2rem;
+    }
+  }
+  
 
 
 
