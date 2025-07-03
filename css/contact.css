@@ -121,7 +121,7 @@ main {
 
 main h2 {
   text-align: center;
-  color: #ff5722;
+  color: #10b981;
   margin-bottom: 2rem;
 }
 
@@ -176,7 +176,7 @@ form {
   background: white;
   padding: 0 0.25rem;
   font-size: 0.75rem;
-  color: #ff5722;
+  color: #10b981;
 }
 
 #submit-button {
