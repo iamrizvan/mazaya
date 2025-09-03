@@ -1,0 +1,28 @@
+/* theme.css */
+:root {
+    --primary: #0077b6;
+    --secondary: #00b4d8;
+    --accent: #90e0ef;
+    --dark: #222;
+    --light: #f9f9f9;
+  
+    --font-main: 'Segoe UI', Tahoma, sans-serif;
+    --radius: 12px;
+    --shadow: 0 4px 15px rgba(0,0,0,0.05);
+  }
+  
+  body {
+    font-family: var(--font-main);
+    background: var(--light);
+    color: var(--dark);
+  }
+  h1, h2, h3 {
+    color: var(--primary);
+  }
+  .btn-primary {
+    background: var(--primary);
+    color: white;
+    border-radius: var(--radius);
+    box-shadow: var(--shadow);
+  }
+  

@@ -11,7 +11,98 @@ body {
   background: #f9f9f9;
 }
 
-/* NAVBAR */
+h1 {
+  font-size: 3rem;
+  font-weight: 700;
+  color: #0f172a;
+  /* rich dark navy */
+  line-height: 1.2;
+  margin-bottom: 20px;
+  text-align: center;
+  letter-spacing: -1px;
+  background: linear-gradient(to right, #0ea5e9, #22c55e);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+h1::after {
+  content: '';
+  display: block;
+  width: 120px;
+  height: 4px;
+  background-color: #ffbc04;
+  margin: 12px auto 0;
+  border-radius: 2px;
+}
+
+/* Responsive Tweak */
+@media (max-width: 600px) {
+  h1 {
+      font-size: 2.2rem;
+  }
+
+  h2 {
+      font-size: 1.5rem;
+  }
+}
+
+.quick-highlights {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 30px;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.highlight {
+  background: rgba(255, 255, 255, 0.2);
+  backdrop-filter: blur(14px);
+  -webkit-backdrop-filter: blur(14px);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  border-radius: 20px;
+  padding: 30px;
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: #0f172a;
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.08);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.highlight:hover {
+  transform: translateY(-8px) scale(1.02);
+  box-shadow: 0 16px 40px rgba(0, 0, 0, 0.12);
+}
+
+.highlight span {
+  display: block;
+  font-size: 2rem;
+  margin-bottom: 10px;
+  animation: float 2s ease-in-out infinite;
+}
+
+@keyframes float {
+
+  0%,
+  100% {
+      transform: translateY(0);
+  }
+
+  50% {
+      transform: translateY(-6px);
+  }
+}
+
+@media (max-width: 600px) {
+  .section h1 {
+      font-size: 2rem;
+  }
+
+  .highlight {
+      font-size: 1rem;
+      padding: 20px;
+  }
+}
+
 /* Navigation Bar Styling */
 nav {
   display: flex;
@@ -103,12 +194,6 @@ nav img {
   text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.3);
 }
 
-.what-makes-us-different {
-  padding: 60px 20px;
-  background: linear-gradient(135deg, #f1fdfb, #ffffff);
-  text-align: center;
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-}
 
 /* ABOUT SECTION */
 .about-section {
