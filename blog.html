@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Blog | HibibiBite</title>
+  <link rel="stylesheet" href="css/blog.css">
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script src="js/components.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+<body>
+
+ 
+<div id="header"></div>
+
+   <!-- Blog List -->
+  <main id="blog-list">
+    <!-- Blog posts will be dynamically injected via jQuery -->
+  </main>
+
+
+  <!-- jQuery Script -->
+  <script>
+    $(document).ready(function() {
+      const blogPosts = [
+  {
+    title: "Top 5 Snacks People Love in 2025",
+    img: "https://images.unsplash.com/photo-1606788075761-66da4b8126d5?auto=format&fit=crop&w=1200&q=80",
+    content: "Chips, chocolates, protein bars, dried fruits, and flavored popcorn top the list this year. Vending trends have shown a huge spike in healthier snack options for busy professionals. Consumers now expect a blend of indulgence and wellness from vending machines."
+  },
+  {
+    title: "Why Every Office Needs a Smart Vending Machine",
+    img: "https://images.unsplash.com/photo-1556741533-411cf82e4e2d?auto=format&fit=crop&w=1200&q=80",
+    content: "From improving employee satisfaction to reducing downtime, smart vending machines make office life smoother. Real-time stock updates, contactless payments, and custom product selections enhance workplace convenience and promote better productivity."
+  },
+  {
+    title: "The Rise of Cashless Vending in the UAE",
+    img: "https://images.unsplash.com/photo-1523475472560-d2df97ec485c?auto=format&fit=crop&w=1200&q=80",
+    content: "With more than 85% of transactions now digital, the UAE is quickly adopting cashless vending solutions. HibibiBite machines support QR codes, NFC, and mobile wallets to create a frictionless, hygienic buying experience for customers."
+  },
+  {
+    title: "Healthy Snacks That Actually Sell in Vending Machines",
+    img: "https://images.unsplash.com/photo-1512621776951-a57141f2eefd?auto=format&fit=crop&w=1200&q=80",
+    content: "Traditional vending options are being replaced with granola bars, mixed nuts, fruit chips, and sugar-free beverages. Health-conscious buyers now actively look for labels with high protein, low sugar, and sustainable packaging when making snack decisions."
+  },
+  {
+    title: "How AI is Changing the Vending Industry",
+    img: "https://images.unsplash.com/photo-1581091215367-59e84eaa4d2c?auto=format&fit=crop&w=1200&q=80",
+    content: "Artificial Intelligence allows vending machines to predict which products will sell best, track inventory in real time, and recommend personalized offers. HibibiBite is exploring AI features to reduce waste and increase customer satisfaction."
+  },
+  {
+    title: "Eco-Friendly Vending Machines: The Green Revolution",
+    img: "https://images.unsplash.com/photo-1556761175-4b46a572b786?auto=format&fit=crop&w=1200&q=80",
+    content: "With climate concerns rising, vending machines are adopting energy-efficient cooling, biodegradable packaging, and solar-powered solutions. HibibiBite is committed to reducing its carbon footprint while serving your favorite snacks and drinks."
+  },
+  {
+    title: "Boosting Sales with Seasonal Vending Promotions",
+    img: "https://images.unsplash.com/photo-1514995428455-447d4443fa7f?auto=format&fit=crop&w=1200&q=80",
+    content: "Offering seasonal snacks like spiced cookies during winter or chilled smoothies in summer increases engagement and sales. Limited-time offers create excitement and encourage repeat visits to vending machines."
+  },
+  {
+    title: "Why Location is Key for Vending Machine Success",
+    img: "https://images.unsplash.com/photo-1582233479361-26f1bb4c130b?auto=format&fit=crop&w=1200&q=80",
+    content: "Placing vending machines in high-traffic locations like malls, office lobbies, gyms, and transit stations ensures maximum visibility. Smart location scouting is one of the most important factors in running a profitable vending business."
+  },
+  {
+    title: "Beverage Trends: What People Drink on the Go",
+    img: "https://images.unsplash.com/photo-1556742400-b5c0b86dcaa0?auto=format&fit=crop&w=1200&q=80",
+    content: "Energy drinks, flavored sparkling water, kombucha, and plant-based milk beverages are becoming popular vending options. HibibiBite machines adapt to these trends by rotating seasonal and high-demand drinks to keep customers satisfied."
+  },
+  {
+    title: "Future of Vending: Smart, Connected, and Everywhere",
+    img: "https://images.unsplash.com/photo-1587035889462-97a7aab2b7fc?auto=format&fit=crop&w=1200&q=80",
+    content: "The vending machines of the future will be fully connected IoT devices, capable of remote management, AI-driven restocking, and offering immersive digital interfaces. HibibiBite aims to lead this transformation in the UAE with innovative smart vending solutions."
+  }
+];
+
+
+      blogPosts.forEach((post, index) => {
+        $('#blog-list').append(`
+          <div class="blog-card">
+            <img src="${post.img}" alt="${post.title}">
+            <div class="blog-card-content">
+              <h2>${post.title}</h2>
+              <p id="content-${index}">${post.content}</p>
+              <button class="read-more" data-index="${index}">Read More</button>
+            </div>
+          </div>
+        `);
+      });
+
+      $(".read-more").click(function() {
+        const index = $(this).data("index");
+        const content = $(`#content-${index}`);
+        if (content.is(":visible")) {
+          content.slideUp();
+          $(this).text("Read More");
+        } else {
+          content.slideDown();
+          $(this).text("Read Less");
+        }
+      });
+    });
+  </script>
+
+  <!-- Placeholder for footer -->
+  <div id="footer"></div>
+
+</body>
+</html>
