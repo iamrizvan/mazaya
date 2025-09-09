@@ -1,48 +1,99 @@
-/* Navigation Bar Styling */
-nav {
+/* Navbar layout */
+.navbar {
   display: flex;
-  align-items: center;
   justify-content: space-between;
-  padding: 16px 40px;
+  align-items: center;
+  padding: 1rem 5%;
   background: linear-gradient(to right, #0ea5e9, #0f766e);
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
   position: sticky;
   top: 0;
   z-index: 1000;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.08);
 }
 
-nav a {
-  color: #ffffff;
+.navbar img {
+  height: 45px;
+  border-radius: 6px;
+}
+
+/* Desktop links */
+.nav-links {
+  display: flex;
+  gap: 20px;
+}
+
+.nav-links a {
   text-decoration: none;
-  margin-left: 30px;
-  font-size: 1rem;
+  color: #ffffff;
   font-weight: 500;
-  transition: color 0.3s ease, border-bottom 0.3s ease;
+  font-size: 1rem;
+  transition: color 0.3s, border-bottom 0.3s;
 }
 
-nav a:first-of-type {
-  margin-left: 0;
-}
-
-nav a:hover {
+.nav-links a:hover {
   color: #ffe082;
   border-bottom: 2px solid #ffe082;
 }
 
-nav img {
-  height: 40px;
-  border-radius: 6px;
+/* Hamburger (always top right) */
+.menu-toggle {
+  display: none;
+  background: none;
+  border: none;
+  font-size: 1.6rem;
+  color: #fff;
+  cursor: pointer;
+  margin-left: auto;
+  z-index: 1100;
+  /* keeps it above dropdown */
 }
 
-/* Responsive Layout */
+/* Mobile styles */
 @media (max-width: 768px) {
-  nav {
-    flex-direction: column;
-    align-items: flex-start;
-    padding: 16px 20px;
+  .menu-toggle {
+    display: block;
   }
 
-  nav a {
-    margin: 10px 0;
+  /* Dropdown menu */
+  .nav-links {
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    /* make it appear below navbar */
+    top: 100%;
+    /* just under navbar */
+    left: 0;
+    width: 100%;
+    background: #ffffff;
+    padding: 1rem 0;
+    border-radius: 0 0 6px 6px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
+  }
+
+  .nav-links.active {
+    display: flex;
+    animation: expand 0.3s ease-out;
+  }
+
+  .nav-links a {
+    color: #333;
+    padding: 10px 5%;
+  }
+
+  .nav-links a:hover {
+    color: #0ea5e9;
+    border-bottom: none;
+  }
+
+  @keyframes expand {
+    from {
+      opacity: 0;
+      transform: scaleY(0.95);
+    }
+
+    to {
+      opacity: 1;
+      transform: scaleY(1);
+    }
   }
 }
