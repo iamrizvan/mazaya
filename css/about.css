@@ -4,6 +4,7 @@
   padding: 0;
   box-sizing: border-box;
 }
+
 body {
   font-family: 'Segoe UI', Tahoma, sans-serif;
   color: #333;
@@ -11,18 +12,22 @@ body {
   background: #f9f9f9;
 }
 
+/* Headings */
 h1 {
   font-size: 3rem;
   font-weight: 700;
-  color: #0f172a;
-  /* rich dark navy */
   line-height: 1.2;
-  margin-bottom: 20px;
   text-align: center;
-  letter-spacing: -1px;
   background: linear-gradient(to right, #0ea5e9, #22c55e);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
+  margin-bottom: 1rem;
+}
+
+h2 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+  color: #0077b6;
 }
 
 h1::after {
@@ -35,96 +40,23 @@ h1::after {
   border-radius: 2px;
 }
 
-/* Responsive Tweak */
-@media (max-width: 600px) {
-  h1 {
-      font-size: 2.2rem;
-  }
-
-  h2 {
-      font-size: 1.5rem;
-  }
-}
-
-.quick-highlights {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
-  gap: 30px;
-  max-width: 1000px;
-  margin: 0 auto;
-}
-
-.highlight {
-  background: rgba(255, 255, 255, 0.2);
-  backdrop-filter: blur(14px);
-  -webkit-backdrop-filter: blur(14px);
-  border: 1px solid rgba(255, 255, 255, 0.3);
-  border-radius: 20px;
-  padding: 30px;
-  font-size: 1.1rem;
-  font-weight: 600;
-  color: #0f172a;
-  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.08);
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
-}
-
-.highlight:hover {
-  transform: translateY(-8px) scale(1.02);
-  box-shadow: 0 16px 40px rgba(0, 0, 0, 0.12);
-}
-
-.highlight span {
-  display: block;
-  font-size: 2rem;
-  margin-bottom: 10px;
-  animation: float 2s ease-in-out infinite;
-}
-
-@keyframes float {
-
-  0%,
-  100% {
-      transform: translateY(0);
-  }
-
-  50% {
-      transform: translateY(-6px);
-  }
-}
-
-@media (max-width: 600px) {
-  .section h1 {
-      font-size: 2rem;
-  }
-
-  .highlight {
-      font-size: 1rem;
-      padding: 20px;
-  }
-}
-
+/* Hero Section */
 .welcome-hero {
-  background-image: url('../images/aboutus.jpg');
+  background-image: url('images/aboutus.jpg');
   background-size: cover;
   background-position: center;
   padding: 5rem 1rem;
   text-align: center;
   color: #fff;
   position: relative;
-  margin: 0 0;
 }
 
 .welcome-hero::before {
   content: "";
   position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
+  inset: 0;
   background: rgba(0, 0, 0, 0.6);
-  /* dark overlay for readability */
   z-index: 1;
-  border-radius: 0px;
 }
 
 .welcome-content {
@@ -133,10 +65,7 @@ h1::after {
   max-width: 900px;
   margin: auto;
   padding: 2rem;
-  font-family: 'Raleway', sans-serif;
 }
-
-
 
 .welcome-content p {
   font-size: 1.3rem;
@@ -144,74 +73,207 @@ h1::after {
   text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.3);
 }
 
-
-/* ABOUT SECTION */
+/* About Section */
 .about-section {
   padding: 4rem 10%;
   display: flex;
   justify-content: center;
 }
+
 .about-content {
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 2rem;
   align-items: center;
 }
+
 .about-section.reverse .about-content {
   direction: rtl; /* flip layout */
 }
 .about-section.reverse .text {
-  direction: ltr; /* keep text aligned normally */
+  direction: ltr; /* keep text normal */
 }
+
 .about-content img {
   width: 100%;
   border-radius: 12px;
   box-shadow: 0 4px 20px rgba(0,0,0,0.1);
 }
-.about-content h2 {
-  font-size: 2rem;
-  margin-bottom: 1rem;
-  color: #0077b6;
-}
+
 .about-content p {
   font-size: 1.05rem;
   color: #555;
 }
 
-/* FEATURES */
+/* Features Section */
 .features {
   padding: 4rem 10%;
   background: white;
   text-align: center;
 }
+
 .features h2 {
-  font-size: 2rem;
   margin-bottom: 2rem;
-  color: #0077b6;
 }
+
 .features-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
   gap: 1.5rem;
 }
+
 .feature-card {
   background: #f1faff;
   padding: 2rem;
   border-radius: 12px;
   box-shadow: 0 2px 10px rgba(0,0,0,0.05);
-  transition: transform 0.3s;
+  transition: transform 0.3s ease;
 }
+
 .feature-card:hover {
   transform: translateY(-5px);
 }
+
 .feature-card span {
   font-size: 2rem;
 }
+
 .feature-card h3 {
   margin: 1rem 0 0.5rem;
   color: #333;
 }
+
 .feature-card p {
   color: #666;
   font-size: 0.95rem;
+}
+
+/* Responsive Tweaks */
+@media (max-width: 992px) {
+  .about-content {
+    grid-template-columns: 1fr; /* stack */
+    text-align: center;
+  }
+  .about-section.reverse .about-content {
+    direction: ltr; /* reset */
+  }
+  .about-content img {
+    max-width: 80%;
+    margin: 0 auto;
+  }
+}
+
+@media (max-width: 768px) {
+  .welcome-hero {
+    padding: 3rem 1rem;
+  }
+  h1 {
+    font-size: 2.2rem;
+  }
+  h2 {
+    font-size: 1.5rem;
+  }
+  .welcome-content p {
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .about-section,
+  .features {
+    padding: 2rem 5%;
+  }
+  h1 {
+    font-size: 1.8rem;
+  }
+}
+
+
+/* CTA Section */
+.cta {
+  background: linear-gradient(135deg, #0ea5e9, #22c55e);
+  color: #fff;
+  text-align: center;
+  padding: 4rem 2rem;
+  border-radius: 20px;
+  margin: 4rem 10%;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+  position: relative;
+  overflow: hidden;
+}
+
+/* Decorative background shapes */
+.cta::before,
+.cta::after {
+  content: "";
+  position: absolute;
+  border-radius: 50%;
+  opacity: 0.15;
+}
+
+.cta::before {
+  width: 200px;
+  height: 200px;
+  background: #fff;
+  top: -60px;
+  left: -60px;
+}
+
+.cta::after {
+  width: 300px;
+  height: 300px;
+  background: #000;
+  bottom: -100px;
+  right: -100px;
+}
+
+.cta h2 {
+  font-size: 2.2rem;
+  margin-bottom: 1rem;
+  font-weight: 700;
+}
+
+.cta p {
+  font-size: 1.2rem;
+  margin-bottom: 2rem;
+  max-width: 700px;
+  margin-left: auto;
+  margin-right: auto;
+  line-height: 1.6;
+}
+
+/* CTA Button */
+.cta .btn {
+  display: inline-block;
+  background: #fff;
+  color: #0ea5e9;
+  font-size: 1.1rem;
+  font-weight: 600;
+  padding: 0.8rem 2rem;
+  border-radius: 50px;
+  text-decoration: none;
+  transition: all 0.3s ease;
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.15);
+}
+
+.cta .btn:hover {
+  background: #0f172a;
+  color: #fff;
+  transform: translateY(-3px);
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .cta {
+    margin: 2rem 5%;
+    padding: 3rem 1.5rem;
+  }
+
+  .cta h2 {
+    font-size: 1.8rem;
+  }
+
+  .cta p {
+    font-size: 1rem;
+  }
 }
