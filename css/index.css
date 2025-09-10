@@ -201,41 +201,6 @@ h1::after {
   }
 }
 
-/* Navigation Bar Styling */
-nav {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  padding: 16px 40px;
-  background: linear-gradient(to right, #0ea5e9, #0f766e);
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
-  position: sticky;
-  top: 0;
-  z-index: 1000;
-}
-
-nav a {
-  color: #ffffff;
-  text-decoration: none;
-  margin-left: 30px;
-  font-size: 1rem;
-  font-weight: 500;
-  transition: color 0.3s ease, border-bottom 0.3s ease;
-}
-
-nav a:first-of-type {
-  margin-left: 0;
-}
-
-nav a:hover {
-  color: #ffe082;
-  border-bottom: 2px solid #ffe082;
-}
-
-nav img {
-  height: 40px;
-  border-radius: 6px;
-}
 
 
 .welcome-hero {
@@ -279,51 +244,82 @@ nav img {
 
 .what-makes-us-different {
   padding: 60px 20px;
-  background: linear-gradient(135deg, #f1fdfb, #ffffff);
+  background: #fdfdfd;
   text-align: center;
-  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
 }
 
-/* Features Grid */
+.what-makes-us-different h1 {
+  font-size: 2.5rem;
+  margin-bottom: 40px;
+  color: #222;
+  font-weight: 700;
+}
+
 .features {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
-  gap: 30px;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 25px;
   max-width: 1200px;
   margin: 0 auto;
 }
 
-/* Feature Card */
 .feature {
-  background-color: #ffffff;
-  border: 1px solid #e0f2f1;
+  background: #ffffff;
   border-radius: 16px;
   padding: 30px 20px;
-  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.05);
+  box-shadow: 0 10px 25px rgba(0,0,0,0.08);
   transition: transform 0.3s ease, box-shadow 0.3s ease;
+  position: relative;
+  overflow: hidden;
 }
 
 .feature:hover {
-  transform: translateY(-8px);
-  box-shadow: 0 12px 32px rgba(0, 0, 0, 0.08);
+  transform: translateY(-10px);
+  box-shadow: 0 15px 35px rgba(0,0,0,0.15);
+}
+
+.feature .icon {
+  font-size: 2.5rem;
+  background: linear-gradient(135deg, #6c5ce7, #a29bfe);
+  color: white;
+  width: 60px;
+  height: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  margin: 0 auto 15px;
+  transition: transform 0.3s ease;
+}
+
+.feature:hover .icon {
+  transform: rotate(20deg) scale(1.1);
 }
 
 .feature strong {
   display: block;
   font-size: 1.2rem;
-  color: #0f766e;
   margin-bottom: 10px;
+  color: #333;
 }
 
 .feature p {
   font-size: 1rem;
-  color: #4b5563;
+  color: #666;
   line-height: 1.6;
 }
 
-@media (max-width: 600px) {
-  .what-makes-us-different h2 {
+/* Responsive tweaks */
+@media (max-width: 768px) {
+  .what-makes-us-different h1 {
+    font-size: 2rem;
+  }
+  .feature {
+    padding: 25px 15px;
+  }
+  .feature .icon {
+    width: 50px;
+    height: 50px;
     font-size: 2rem;
   }
 }
-
