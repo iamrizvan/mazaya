@@ -71,3 +71,38 @@ p {
   color: #0ea5e9;
 } */
 
+
+
+/* Modern Request Machine Button */
+.btn-request {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 170px;              /* fixed width */
+  height: 48px;              /* fixed height */
+  background: linear-gradient(135deg, #0ea5e9, #22c55e); /* gradient effect */
+  color: #fff;
+  font-weight: 600;
+  font-size: 0.95rem;
+  border-radius: 25px;        /* pill shape */
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+  text-align: center;
+  text-decoration: none;
+  cursor: pointer;
+  transition: transform 0.2s, box-shadow 0.2s, filter 0.2s;
+}
+
+.btn-request:hover {
+  transform: translateY(-3px) scale(1.05);  /* subtle pop-up effect */
+  box-shadow: 0 12px 25px rgba(0, 0, 0, 0.3);
+  filter: brightness(1.1);
+}
+
+/* Keep size consistent on smaller screens */
+@media (max-width: 768px) {
+  .btn-request {
+    width: 170px;
+    height: 48px;
+    font-size: 0.9rem;
+  }
+}
