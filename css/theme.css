@@ -57,65 +57,18 @@ h2{
   -webkit-text-fill-color: transparent;
 }
 
+/* Global paragraph styling */
 p {
-  font-size: 1.1rem; /* slightly bigger than default */
-  line-height: 1.8; /* more spacing for readability */
-  color: #f9f9f9; /* softer than pure black */
-  margin-bottom: 1.5rem; /* space between paragraphs */
-  font-family: "Segoe UI", Roboto, sans-serif;
+  font-family: "Poppins", "Segoe UI", sans-serif;
+  font-size: clamp(0.95rem, 1.1vw, 1.05rem); /* responsive font size */
+  line-height: 1.7;
+  color: #333;
+  margin: 0 0 1.2em;
+  text-align: justify; /* better readability */
+  word-break: break-word;
+  hyphens: auto;
+  transition: color 0.3s ease;
 }
 
 
 
-/* Modern Request Machine Button */
-.btn-request {
-  padding: 12px 32px;
-  font-size: 1rem;
-  font-weight: 600;
-  color: #ffffff;
-  background: linear-gradient(to right, #0ea5e9, #10b981);
-  border: none;
-  border-radius: 30px;
-  cursor: pointer;
-  transition: background 0.4s ease, transform 0.3s ease, box-shadow 0.3s ease;
-  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.1);
-  display: inline-flex;
-  align-items: center;
-  gap: 10px;
-}
-
-.btn-request:hover {
-  background: linear-gradient(to right, #10b981, #0ea5e9);
-  transform: translateY(-2px);
-  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
-}
-.submit-button i {
-  font-size: 1.1rem;
-}
-
-
-/* Keep size consistent on smaller screens */
-@media (max-width: 768px) {  
-  .btn-request {    
-    width: 120px;
-    height: 25px;
-    font-size: 0.9rem;
-    color: #fff;
-    margin-left: 10px;
-  }
-  h1 {
-  font-size: 2rem;
-}
-
-h2{
-  font-size: 1.2rem;
-}
-
-p {
-  font-size: .8rem; /* slightly bigger than default */
-  line-height: 1; /* more spacing for readability */
-  color: #f9f9f9; /* softer than pure black */
-  margin-bottom: 1rem; /* space between paragraphs */
-  font-family: "Segoe UI", Roboto, sans-serif;
-}
-}
