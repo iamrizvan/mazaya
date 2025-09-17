@@ -33,11 +33,10 @@ function initBackToTop() {
   btn.addEventListener("click", () => {
     window.scrollTo({
       top: 0,
-      behavior: "smooth"
+      behavior: "smooth",
     });
   });
 }
-
 
 document.addEventListener("DOMContentLoaded", () => {
   const navbar = document.getElementById("navbar");
@@ -52,7 +51,7 @@ document.addEventListener("DOMContentLoaded", () => {
         <!-- Nav links (desktop visible) -->
         <div class="nav-links">
           <a href="index.html">Home</a>
-          <a href="about.html">About Us</a>
+          <a href="about.html">About</a>
           <a href="products.html">Products</a>
           <a href="services.html">Services</a>
           <a href="partner.html">Partner</a>
@@ -84,12 +83,11 @@ document.addEventListener("DOMContentLoaded", () => {
   }
 });
 
-
 // FAQ Toggle
 document.addEventListener("DOMContentLoaded", () => {
   const questions = document.querySelectorAll(".faq-question");
 
-  questions.forEach(q => {
+  questions.forEach((q) => {
     q.addEventListener("click", () => {
       q.classList.toggle("active");
       const answer = q.nextElementSibling;

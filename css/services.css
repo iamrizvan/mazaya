@@ -1,18 +1,4 @@
-/* General Reset */
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-  }
-  body {
-    font-family: 'Segoe UI', Tahoma, sans-serif;
-    color: #333;
-    background: #f9f9f9;
-    line-height: 1.6;
-  }
-  
-  
-  
+
   /* HERO */
   .services-hero {
     text-align: center;

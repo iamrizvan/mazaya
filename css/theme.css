@@ -43,66 +43,79 @@ h1::after {
   border-radius: 2px;
 }
 
-h2,
-h3 {
-  color: var(--primary);
-}
-
-.btn-primary {
-  background: var(--primary);
-  color: white;
-  border-radius: var(--radius);
-  box-shadow: var(--shadow);
+h2{
+  font-size: 2.2rem;
+  font-weight: 700;
+  color: #0f172a;
+  /* rich dark navy */
+  line-height: 1.2;
+  margin-bottom: 20px;
+  text-align: center;
+  letter-spacing: -1px;
+  background: linear-gradient(to right, #0ea5e9, #22c55e);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
 p {
-  font-size: 1.1rem;          /* slightly bigger than default */
-  line-height: 1.8;           /* more spacing for readability */
-  color: #f9f9f9;                /* softer than pure black */
-  margin-bottom: 1.5rem;      /* space between paragraphs */
+  font-size: 1.1rem; /* slightly bigger than default */
+  line-height: 1.8; /* more spacing for readability */
+  color: #f9f9f9; /* softer than pure black */
+  margin-bottom: 1.5rem; /* space between paragraphs */
   font-family: "Segoe UI", Roboto, sans-serif;
 }
-
-/* Optional: Add first-letter style */
-
-/* p:first-letter {
-  font-size: 1.5rem;
-  font-weight: bold;
-  color: #0ea5e9;
-} */
 
 
 
 /* Modern Request Machine Button */
 .btn-request {
+  padding: 12px 32px;
+  font-size: 1rem;
+  font-weight: 600;
+  color: #ffffff;
+  background: linear-gradient(to right, #0ea5e9, #10b981);
+  border: none;
+  border-radius: 30px;
+  cursor: pointer;
+  transition: background 0.4s ease, transform 0.3s ease, box-shadow 0.3s ease;
+  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.1);
   display: inline-flex;
   align-items: center;
-  justify-content: center;
-  width: 170px;              /* fixed width */
-  height: 48px;              /* fixed height */
-  background: linear-gradient(135deg, #0ea5e9, #22c55e); /* gradient effect */
-  color: #fff;
-  font-weight: 600;
-  font-size: 0.95rem;
-  border-radius: 25px;        /* pill shape */
-  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
-  text-align: center;
-  text-decoration: none;
-  cursor: pointer;
-  transition: transform 0.2s, box-shadow 0.2s, filter 0.2s;
+  gap: 10px;
 }
 
 .btn-request:hover {
-  transform: translateY(-3px) scale(1.05);  /* subtle pop-up effect */
-  box-shadow: 0 12px 25px rgba(0, 0, 0, 0.3);
-  filter: brightness(1.1);
+  background: linear-gradient(to right, #10b981, #0ea5e9);
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
+}
+.submit-button i {
+  font-size: 1.1rem;
 }
 
+
 /* Keep size consistent on smaller screens */
-@media (max-width: 768px) {
-  .btn-request {
-    width: 170px;
-    height: 48px;
+@media (max-width: 768px) {  
+  .btn-request {    
+    width: 120px;
+    height: 25px;
     font-size: 0.9rem;
+    color: #fff;
+    margin-left: 10px;
   }
+  h1 {
+  font-size: 2rem;
+}
+
+h2{
+  font-size: 1.2rem;
+}
+
+p {
+  font-size: .8rem; /* slightly bigger than default */
+  line-height: 1; /* more spacing for readability */
+  color: #f9f9f9; /* softer than pure black */
+  margin-bottom: 1rem; /* space between paragraphs */
+  font-family: "Segoe UI", Roboto, sans-serif;
+}
 }
