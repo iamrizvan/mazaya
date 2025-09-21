@@ -25,34 +25,12 @@
 .welcome-content {
     position: relative;
     z-index: 2;
-    max-width: 900px;
+    max-width: 1000px;
     margin: auto;
     padding: 2rem;
     font-family: 'Raleway', sans-serif;
 }
-  
 
-h1 {
-  font-size: 3rem;
-  font-weight: 700;
-  text-align: center;
-  color: #0f172a;
-  margin-bottom: 50px;
-  background: linear-gradient(to right, #0ea5e9, #10b981);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  position: relative;
-}
-
-h1::after {
-  content: '';
-  width: 70px;
-  height: 4px;
-  background: #ffbc04;
-  display: block;
-  margin: 16px auto 0;
-  border-radius: 3px;
-}
   
 .models-section {
   padding: 60px 20px;
@@ -93,18 +71,6 @@ h1::after {
   min-width: 220px;
 }
 
-.model-text h2 {
-  font-size: 1.5rem;
-  color: #0f172a;
-  margin-bottom: 0.5rem;
-}
-
-.model-text p {
-  font-size: 1rem;
-  color: #4b5563;
-  line-height: 1.6;
-}
-
 .model-icon {
   flex-shrink: 0;
   width: 260px;
@@ -113,7 +79,7 @@ h1::after {
   object-fit: cover;
 }
 
-@media (max-width: 900px) {
+@media (max-width: 1000px) {
   .models-row {
     flex-direction: column;
     align-items: center;

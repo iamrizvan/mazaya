@@ -2,7 +2,7 @@ $(document).ready(function () {
     const blogPosts = [
       {
         title: "Top 5 Snacks People Love in 2025",
-        img: "https://images.unsplash.com/photo-1606788075761-66da4b8126d5?auto=format&fit=crop&w=1200&q=80",
+        img: "https://images.unsplash.com/photo-1620663858647-89b695e62d45?q=80&w=3131&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
         content: "Chips, chocolates, protein bars, dried fruits, and flavored popcorn top the list this year. Consumers now want both indulgence and healthier vending choices."
       },
       {
@@ -22,7 +22,7 @@ $(document).ready(function () {
       },
       {
         title: "How AI is Transforming Vending",
-        img: "https://images.unsplash.com/photo-1581091215367-59e84eaa4d2c?auto=format&fit=crop&w=1200&q=80",
+        img: "https://plus.unsplash.com/premium_photo-1682756540097-6a887bbcf9b0?q=80&w=2342&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
         content: "AI predicts top-selling products, reduces waste through smart inventory, and personalizes offers—redefining vending machine intelligence."
       },
       {
@@ -37,22 +37,22 @@ $(document).ready(function () {
       },
       {
         title: "Why Location is Everything in Vending",
-        img: "https://images.unsplash.com/photo-1582233479361-26f1bb4c130b?auto=format&fit=crop&w=1200&q=80",
+        img: "https://images.unsplash.com/photo-1563309480-5aca14189417?q=80&w=2340&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
         content: "Placement in malls, gyms, and transit hubs maximizes sales. Location scouting is the backbone of a profitable vending machine business."
       },
       {
         title: "Beverage Trends in 2025",
-        img: "https://images.unsplash.com/photo-1556742400-b5c0b86dcaa0?auto=format&fit=crop&w=1200&q=80",
+        img: "https://images.unsplash.com/photo-1496318447583-f524534e9ce1?q=80&w=2468&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
         content: "Flavored sparkling water, kombucha, and plant-based milk are replacing soda. Machines adapt to trends with rotating seasonal drinks."
       },
       {
         title: "Future of Vending: Connected Everywhere",
-        img: "https://images.unsplash.com/photo-1587035889462-97a7aab2b7fc?auto=format&fit=crop&w=1200&q=80",
+        img: "https://images.unsplash.com/photo-1531062916849-ac6624741870?q=80&w=2340&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
         content: "The next-gen vending machine will be a smart IoT hub—AI-driven restocking, real-time monitoring, and interactive digital displays."
       },
       {
         title: "Contactless Payments: Hygiene First",
-        img: "https://images.unsplash.com/photo-1556742400-b5c0b86dcaa0?auto=format&fit=crop&w=1200&q=80",
+        img: "https://plus.unsplash.com/premium_photo-1681336549302-194665803444?q=80&w=2340&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
         content: "Touch-free QR and NFC payments are no longer optional. Hygiene-conscious consumers prefer machines that eliminate cash handling."
       },
       {

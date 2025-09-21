@@ -45,7 +45,7 @@ document.addEventListener("DOMContentLoaded", () => {
       <nav class="navbar">
         <!-- Logo left -->
         <a href="index.html" class="logo">
-          <img src="images/logo.png" alt="Future Market Vending Solution Logo">
+          <img src="images/vm_logo.png" alt="Future Market Vending Solution Logo">
         </a>
 
         <!-- Nav links (desktop visible) -->

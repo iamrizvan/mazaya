@@ -1,20 +1,15 @@
 
   /* HERO */
   .services-hero {
+    background-image: url('../images/service_bg.jpg');
+    background-size: cover;
+    background-position: center;
+    position: relative;
     text-align: center;
     padding: 4rem 10%;
-    background: linear-gradient(to right, #0077b6, #00b4d8);
     color: white;
   }
-  .services-hero h1 {
-    font-size: 2.5rem;
-    margin-bottom: 1rem;
-  }
-  .services-hero p {
-    font-size: 1.1rem;
-    max-width: 600px;
-    margin: auto;
-  }
+ 
   
   /* SERVICES GRID */
   .services-list {
@@ -55,15 +50,7 @@
     padding: 4rem 10%;
     background: #f1faff;
   }
-  .services-cta h2 {
-    font-size: 2rem;
-    margin-bottom: 1rem;
-    color: #0077b6;
-  }
-  .services-cta p {
-    color: #555;
-    margin-bottom: 2rem;
-  }
+
   .cta-buttons {
     display: flex;
     justify-content: center;

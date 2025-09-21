@@ -49,7 +49,7 @@
 }
 
 /* Mobile styles */
-@media (max-width: 768px) {
+@media (max-width: 1000px) {
   .menu-toggle {
     display: block;
   }
@@ -116,7 +116,7 @@
   background: linear-gradient(to right, #a1a1a1, #800026);
 }
 
-@media (max-width: 768px) {  
+@media (max-width: 1000px) {  
   .btn-request {
     display: none;
   }

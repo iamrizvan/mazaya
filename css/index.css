@@ -201,7 +201,11 @@ header {
   z-index: 2;
   position: relative;
 }
-
+.welcome-content p {
+  color: #444;  /* Darker text for visibility */
+  font-size: 1.1rem;
+  line-height: 1.6;
+}
 /* Responsive: tablet and desktop */
 @media (min-width: 768px) {
   .welcome-container {

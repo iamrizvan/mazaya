@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap');
 
 .products-hero {
-  background: url("../images/products.jpg") center/cover no-repeat;
+  background: url("../images/vending_back.jpg") center/cover no-repeat;
   height: 60vh;
   display: flex;
   align-items: center;
